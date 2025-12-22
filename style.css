@@ -1,26 +1,105 @@
+/* ===== General Styles ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
     line-height: 1.6;
 }
 
-header, section, footer {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
+/* ===== Header ===== */
 header {
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    color: white;
+    padding: 60px 20px;
     text-align: center;
 }
 
-h1, h2 {
-    color: #333;
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
 }
 
-a {
-    color: #0077b5; /* LinkedIn blue */
-    text-decoration: none;
+header p {
+    font-size: 1.2rem;
 }
+
+/* Optional profile image */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid white;
+}
+
+/* ===== Sections ===== */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4b6cb7;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* ===== Lists ===== */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* ===== Links ===== */
+a {
+    color: #4b6cb7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #182848;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #00acee; /* Bright blue for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    section {
+        padding: 20px;
+    }
+}
+
