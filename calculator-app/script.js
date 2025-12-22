@@ -1,7 +1,11 @@
 const display = document.getElementById("display");
 
 function press(value) {
-    display.value += value;
+    if(value === 'C') {
+        display.value = "";
+    } else {
+        display.value += value;
+    }
 }
 
 function calculate() {
@@ -10,8 +14,4 @@ function calculate() {
     } catch {
         display.value = "Error";
     }
-}
-
-function clearDisplay() {
-    display.value = "";
 }
