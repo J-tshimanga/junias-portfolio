@@ -29,7 +29,7 @@ header p {
 header img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes it a circle */
     margin-bottom: 20px;
     border: 4px solid white;
 }
