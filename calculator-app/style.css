@@ -1,42 +1,83 @@
+/* General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
 }
 
-.calculator {
-    background-color: white;
+/* Calculator container */
+.calculator-container {
+    background-color: #ffffff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     text-align: center;
+    width: 300px;
 }
 
-input#display {
+/* Display */
+#display {
     width: 100%;
     padding: 15px;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: right;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
 }
 
-.buttons button {
-    width: 60px;
-    height: 60px;
-    margin: 5px;
+/* Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
     font-size: 1.2rem;
-    border-radius: 5px;
     border: none;
-    background-color: #4b6cb7;
-    color: white;
+    border-radius: 10px;
     cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.buttons button:hover {
-    background-color: #182848;
+/* Number buttons */
+button:not(.operator):not(.equals) {
+    background-color: #f0f0f0;
+}
+
+button:hover:not(.operator):not(.equals) {
+    background-color: #e0e0e0;
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #667eea;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #556cd6;
+}
+
+/* Equals button */
+.equals {
+    background-color: #ff6b6b;
+    color: white;
+    grid-row: span 2;
+}
+
+.equals:hover {
+    background-color: #ff4c4c;
+}
+
+/* Zero button spans two columns */
+.zero {
+    grid-column: span 2;
 }
