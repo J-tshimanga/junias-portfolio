@@ -1,61 +1,269 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junias Tshimanga Portfolio</title>
+
+    <meta name="description" content="Junias Tshimanga's software engineering portfolio featuring programming projects, technical skills, education, and experience.">
+
+    <title>Junias Tshimanga | Software Engineer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ===== Header ===== -->
-    <header>
-        <img src="profile.jpg" alt="Junias Tshimanga">
-        <h1>Hi, I’m Junias Tshimanga</h1>
-        <p>Aspiring Software Engineer | Future UTA Student</p>
-    </header>
 
-    <!-- ===== About Me ===== -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an aspiring Software Engineer finishing my Associate degree at Dallas College and transferring to the University of Texas at Arlington in Fall 2026. I enjoy developing software projects in Java, Python, and web technologies, and I am passionate about problem-solving and building applications that make life easier.</p>
-    </section>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a class="logo" href="#home">JT.</a>
 
-    <!-- ===== Skills ===== -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, Python, C++, JavaScript, SQL</li>
-            <li>Web Development: HTML, CSS, React (learning)</li>
-            <li>Tools: Git, GitHub, VS Code</li>
-            <li>Other: Object-Oriented Programming, Data Structures & Algorithms</li>
-            <li>Soft Skills: Problem-solving, Teamwork, Communication</li>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <!-- ===== Projects ===== -->
-    <section id="projects">
-        <h2>Projects</h2>
+    <main>
+        <!-- Hero Section -->
+        <header id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">SOFTWARE ENGINEERING PORTFOLIO</p>
 
-        <div class="project-card">
-            <h3>Calculator App</h3>
-            <p>A modern calculator application built with JavaScript.</p>
-            <a href="https://j-tshimanga.github.io/junias-portfolio/calculator-app/" target="_blank">View Project</a>
-        </div>
+                <h1>Hi, I'm <span>Junias Tshimanga.</span></h1>
 
-        <div class="project-card">
-            <h3>To-Do List App</h3>
-            <p>A stylish To-Do List application built with JavaScript.</p>
-            <a href="https://j-tshimanga.github.io/junias-portfolio/todo-app/" target="_blank">View Project</a>
-        </div>
+                <h2>Aspiring Software Engineer</h2>
 
-    </section>
+                <p class="hero-description">
+                    I enjoy solving problems through programming and building
+                    practical applications. I'm growing my skills in software
+                    development while continuing my education at The University
+                    of Texas at Arlington.
+                </p>
 
-    <!-- ===== Footer ===== -->
-    <footer>
-        <p>Connect with me on 
-            <a href="https://www.linkedin.com/in/junias-tshimanga/" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/JuniasTshim" target="_blank">GitHub</a>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#projects">
+                        Explore My Projects
+                    </a>
+
+                    <a class="btn btn-secondary"
+                       href="https://www.linkedin.com/in/junias-tshimanga-035b2b289/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="profile.jpg"
+                     alt="Portrait of Junias Tshimanga">
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <p class="section-label">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+
+            <p>
+                I'm an aspiring Software Engineer who completed my studies
+                at Dallas College and am continuing my education at The
+                University of Texas at Arlington (UTA), pursuing a bachelor's
+                degree in Software Engineering.
+            </p>
+
+            <p>
+                My technical interests include Java, Python, web development,
+                and building applications that solve real-world problems.
+                My experience in data center facilities support has also
+                helped me develop troubleshooting, documentation, and
+                technical problem-solving skills.
+            </p>
+
+            <p>
+                I'm committed to learning through hands-on projects,
+                strengthening my programming fundamentals, and preparing
+                for opportunities in software engineering and technology.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <p class="section-label">WHAT I WORK WITH</p>
+            <h2>Technical Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Java, Python, JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, Responsive Design</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, Visual Studio Code</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Technical Support</h3>
+                    <p>Ticketing, Troubleshooting, Documentation</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Computer Science</h3>
+                    <p>Programming Fundamentals, Object-Oriented Programming</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Professional Skills</h3>
+                    <p>Problem-Solving, Communication, Teamwork</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <p class="section-label">SOME OF MY WORK</p>
+            <h2>Featured Projects</h2>
+
+            <p class="section-intro">
+                Here are projects I've built to practice programming,
+                improve my development skills, and solve everyday problems.
+            </p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-number">PROJECT 01</div>
+
+                    <h3>Calculator App</h3>
+
+                    <p>
+                        An interactive calculator built with JavaScript
+                        to perform common mathematical calculations
+                        through a simple user interface.
+                    </p>
+
+                    <p class="project-tech">
+                        HTML · CSS · JavaScript
+                    </p>
+
+                    <a href="calculator-app/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Live Demo →
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">PROJECT 02</div>
+
+                    <h3>To-Do List App</h3>
+
+                    <p>
+                        A task management application designed to help
+                        users organize everyday tasks and keep track
+                        of what needs to be completed.
+                    </p>
+
+                    <p class="project-tech">
+                        HTML · CSS · JavaScript
+                    </p>
+
+                    <a href="todo-app/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Live Demo →
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <p class="section-label">MY BACKGROUND</p>
+            <h2>Education & Experience</h2>
+
+            <div class="experience-card">
+                <h3>The University of Texas at Arlington</h3>
+                <p class="experience-meta">
+                    Software Engineering · Bachelor's Degree in Progress
+                </p>
+                <p>
+                    Continuing my education with a focus on software
+                    development, programming, and computer science.
+                </p>
+            </div>
+
+            <div class="experience-card">
+                <h3>Dallas College</h3>
+                <p class="experience-meta">
+                    Associate of Science · Completed May 2026
+                </p>
+                <p>
+                    Completed associate-level coursework while developing
+                    programming, analytical, and mathematical problem-solving
+                    skills.
+                </p>
+            </div>
+
+            <div class="experience-card">
+                <h3>Cognovum</h3>
+                <p class="experience-meta">
+                    Data Center Facilities Support · August 2025 – June 2026
+                </p>
+                <p>
+                    Used ticketing workflows, assisted with initial
+                    troubleshooting, documented issues, and supported
+                    escalation and communication to help resolve problems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Get in Touch</h2>
+
+            <p>
+                I'm interested in connecting with developers, learning
+                from technology professionals, and exploring opportunities
+                in software engineering and IT.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:juniaskabeya@gmail.com">
+                    Email Me
+                </a>
+
+                <a href="https://www.linkedin.com/in/junias-tshimanga-035b2b289/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/j-tshimanga"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub Profile
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            &copy; 2026 Junias Tshimanga. Built with HTML and CSS.
         </p>
     </footer>
+
 </body>
 </html>
+
